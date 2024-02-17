@@ -62,14 +62,14 @@ service.interceptors.response.use(
   // 响应成功进入第1个函数，该函数的参数是响应对象
   response => {
     const res = response.data
-    if (res.code == 208) {
+    if (res.code == 203) {
         const redirect = encodeURIComponent(window.location.href)  // 当前地址栏的url
         router.push(`/login?redirect=${redirect}`)
         return Promise.reject(new Error(res.message || 'Error'))
     }
     return res 
   },
-  // 响应失败进入第2个函数，该函数的参数是错误对象
+  // 响应失败进入第2个函数，该函数的参数是错误对象y
   async error => {
     // 如果响应码是 401 ，则请求获取新的 token
     // 响应拦截器中的 error 就是那个响应的错误对象
