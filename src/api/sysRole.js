@@ -6,7 +6,7 @@ export const GetSysRoleListByPage = (current , limit , queryDto) => {
         // url: '/admin/system/sysRole/findByPage/' + pageNum + "/" + pageSize,
         url: `/admin/system/sysRole/findByPage/${current}/${limit}`,//接口
         method: 'post',//提交方式
-        //后端接口如果是@RequestBody，需要用data
+        //后端接口如果是@RequestBody，需要用data：名称
         //如果没有注解,前端是params：名称
         data: queryDto,
     })
