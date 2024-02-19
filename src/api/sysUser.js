@@ -4,8 +4,8 @@ import request from '@/utils/request'
 export const GetSysUserListByPage = (pageNum , pageSize , queryDto) => {
     return request({
         url: "/admin/system/sysUser/findByPage/" + pageNum + "/" + pageSize,
-        method: 'get',
-        params: queryDto
+        method: 'post',
+        data: queryDto
     })
 }
 

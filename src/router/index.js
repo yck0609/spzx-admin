@@ -38,7 +38,7 @@ import test from './modules/test'
 // 固定菜单
 import system from './modules/system'
 // 固定菜单
-export const fixedRoutes = [...home]
+export const fixedRoutes = [...home,...system]
 import product from './modules/product'
 import order from './modules/order'
 // 动态菜单
