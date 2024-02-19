@@ -45,7 +45,7 @@
             </el-form>
         </el-dialog>
 
-        <!-- 添加页面表单 -->
+        <!-- 添加角色页面表单 -->
         <el-dialog v-model="dialogVisible" title="添加或修改角色" width="30%">
             <el-form label-width="120px">
                 <el-form-item label="角色名称">
@@ -211,7 +211,7 @@ const deleteById = (row) => {
         cancelButtonText: '取消',
         type: 'warning',
     }).then(async () => {
-       const {code } = await DeleteSysRoleById(row.id)
+       const {code} = await DeleteSysRoleById(row.id)
        if(code === 200) {
             ElMessage.success('删除成功')
             pageParams.value.page = 1
