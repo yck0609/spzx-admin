@@ -37,10 +37,9 @@ import test from './modules/test'
 /* 菜单栏的路由 */
 // 固定菜单
 import system from './modules/system'
-// 固定菜单
-export const fixedRoutes = [...home,...system]
 import product from './modules/product'
 import order from './modules/order'
+export const fixedRoutes = [...home, ...system, ...product, ...order]
 // 动态菜单
 export const asyncRoutes = [...system,...product,...order]
 // 动态菜单

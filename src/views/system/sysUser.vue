@@ -55,7 +55,7 @@
             <el-form-item label="头像">
                 <el-upload
                         class="avatar-uploader"
-                        action="http://localhost:8501/admin/system/fileUpload"
+                        action="http://localhost:1448/admin/system/fileUpload"
                         :show-file-list="false"
                         :on-success="handleAvatarSuccess"
                         :headers="headers"
