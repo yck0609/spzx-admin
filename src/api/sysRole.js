@@ -38,7 +38,6 @@ export const DeleteSysRoleById = (roleId) => {
     })
 }
 
-
 // 查询所有的角色数据
 export const GetAllRoleList = (userId) => {
     return request({
@@ -46,6 +45,7 @@ export const GetAllRoleList = (userId) => {
         method: 'get'
     })
 }
+
 // 查询指定角色所对应的菜单id
 export const GetSysRoleMenuIds = (roleId) => {
     return request({
