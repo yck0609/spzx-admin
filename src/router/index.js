@@ -42,7 +42,6 @@ import order from './modules/order'
 export const fixedRoutes = [...home, ...system, ...product, ...order]
 // 动态菜单
 export const asyncRoutes = [...system,...product,...order]
-// 动态菜单
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
