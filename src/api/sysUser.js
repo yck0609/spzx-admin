@@ -12,7 +12,7 @@ export const GetSysUserListByPage = (pageNum , pageSize , queryDto) => {
 // 新增用户的方法
 export const SaveSysUser = (sysUser) => {
     return request({
-        url: "/admin/system/sysUser/saveSysUser",
+        url: "/admin/system/sysUser/save",
         method: "post",
         data: sysUser,
     })
@@ -21,7 +21,7 @@ export const SaveSysUser = (sysUser) => {
 // 修改用户数据的方法
 export const UpdateSysUser = (sysUser) => {
     return request({
-        url: "/admin/system/sysUser/updateSysUser",
+        url: "/admin/system/sysUser/update",
         method: "put",
         data: sysUser,
     })
@@ -30,7 +30,7 @@ export const UpdateSysUser = (sysUser) => {
 // 根据id删除用户
 export const DeleteSysUserById = (userId) => {
     return request({
-        url: "/admin/system/sysUser/deleteById/" + userId,
+        url: "/admin/system/sysUser/delete/" + userId,
         method: 'delete'
     })
 }

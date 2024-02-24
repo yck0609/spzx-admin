@@ -21,7 +21,7 @@ export const SaveMenu = sysMenu => {
 // 修改信息
 export const UpdateSysMenuById = sysMenu => {
     return request({
-        url: `${api_name}/updateById`,
+        url: `${api_name}/update`,
         method: 'put',
         data: sysMenu,
     })
@@ -30,7 +30,7 @@ export const UpdateSysMenuById = sysMenu => {
 // 根据id删除数据
 export const RemoveSysMenuById = id => {
     return request({
-        url: `${api_name}/removeById/${id}`,
+        url: `${api_name}/delete/${id}`,
         method: 'delete',
     })
 }
