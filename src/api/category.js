@@ -13,7 +13,7 @@ export const FindCategoryByParentId = parentId => {
 // 导出方法
 export const ExportCategoryData = () => {
   return request({
-    url: `${api_name}/exportData`,
+    url: `${api_name}/export`,
     method: 'get',
     responseType: 'blob'  // // 这里指定响应类型为blob类型,二进制数据类型，用于表示大量的二进制数据
   })
