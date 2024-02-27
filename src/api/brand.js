@@ -5,7 +5,7 @@ const api_name = '/admin/product/brand'
 // 分页列表
 export const GetBrandPageList = (page, limit) => {
   return request({
-    url: `${api_name}/${page}/${limit}`,
+    url: `${api_name}/query/${page}/${limit}`,
     method: 'get'
   })
 }
@@ -13,7 +13,7 @@ export const GetBrandPageList = (page, limit) => {
 // 保存品牌
 export const SaveBrand = brand => {
     return request({
-        url: `${api_name}/save`,
+        url: `${api_name}/add`,
         method: 'post',
         data: brand,
     })
@@ -22,7 +22,7 @@ export const SaveBrand = brand => {
 // 修改信息
 export const UpdateBrandById = brand => {
     return request({
-        url: `${api_name}/updateById`,
+        url: `${api_name}/update`,
         method: 'put',
         data: brand,
     })
@@ -30,9 +30,9 @@ export const UpdateBrandById = brand => {
 
 
 // 根据id删除品牌
-export const DeleteBrandById = id => {
+export const DeleteBrandById = brandId => {
     return request({
-      url: `${api_name}/deleteById/${id}`,
+      url: `${api_name}/delete/${brandId}`,
       method: 'delete',
     })
 }
@@ -40,7 +40,7 @@ export const DeleteBrandById = id => {
 // 查询所有的品牌数据
 export const FindAllBrand = () => {
     return request({
-      url: `${api_name}/findAll`,
+      url: `${api_name}/queryAll`,
       method: 'get',
     })
 }

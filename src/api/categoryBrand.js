@@ -5,7 +5,7 @@ const api_name = '/admin/product/categoryBrand'
 // 分页列表
 export const GetCategoryBrandPageList = (page, limit, searchObj) => {
     return request({
-        url: `${api_name}/${page}/${limit}`,
+        url: `${api_name}/query/${page}/${limit}`,
         method: 'get',
         params: searchObj,
     })
@@ -23,7 +23,7 @@ export const SaveCategoryBrand = categoryBrand => {
 // 修改信息
 export const UpdateCategoryBrandById = categoryBrand => {
     return request({
-        url: `${api_name}/updateById`,
+        url: `${api_name}/update`,
         method: 'put',
         data: categoryBrand,
     })
@@ -32,7 +32,7 @@ export const UpdateCategoryBrandById = categoryBrand => {
 // 根据id删除数据
 export const DeleteCategoryBrandById = id => {
     return request({
-      url: `${api_name}/deleteById/${id}`,
+      url: `${api_name}/delete/${id}`,
       method: 'delete',
     })
 }
