@@ -86,6 +86,7 @@ export default env => {
     },
     esbuild: false,
     build: {
+      chunkSizeWarningLimit: 5000,
       terserOptions: {
         compress: {
           keep_infinity: true,
