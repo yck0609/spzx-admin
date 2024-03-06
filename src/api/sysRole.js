@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 
 // 分页查询角色数据
-export const GetSysRoleListByPage = (current , limit , queryDto) => {
+export const GetSysRoleListByPage = (current, limit, queryDto) => {
     return request({
         // url: '/admin/system/sysRole/findByPage/' + pageNum + "/" + pageSize,
         url: `/admin/system/sysRole/findByPage/${current}/${limit}`,//接口

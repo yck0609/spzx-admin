@@ -1,4 +1,4 @@
-import { _ as _export_sfc, i as useLang } from './index.2c51eab4.js';
+import { _ as _export_sfc, i as useLang } from './index.89c44364.js';
 import { l as openBlock, m as createBlock, n as withCtx, j as createVNode, J as createElementBlock, Q as renderList, F as Fragment, K as createBaseVNode, p as resolveComponent, u as unref, R as createTextVNode, S as toDisplayString } from './element-plus.fa662df5.js';
 
 var ChangeLang_vue_vue_type_style_index_0_scoped_true_lang = '';

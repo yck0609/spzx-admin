@@ -1,5 +1,5 @@
-import { _ as _export_sfc, c as useApp } from './index.2c51eab4.js';
-import { G as GetBrandPageList, D as DeleteBrandById, U as UpdateBrandById, S as SaveBrand } from './brand.679e6b07.js';
+import { _ as _export_sfc, c as useApp } from './index.89c44364.js';
+import { G as GetBrandPageList, D as DeleteBrandById, U as UpdateBrandById, S as SaveBrand } from './brand.711c98de.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, m as createBlock, F as Fragment, R as createTextVNode, a9 as ElMessageBox, H as ElMessage } from './element-plus.fa662df5.js';
 
 var brand_vue_vue_type_style_index_0_scoped_true_lang = '';
@@ -175,7 +175,7 @@ return (_ctx, _cache) => {
               default: withCtx(() => [
                 createVNode(_component_el_upload, {
                   class: "avatar-uploader",
-                  action: "http://localhost:1448/admin/system/fileUpload",
+                  action: "http://121.41.52.4:1448/admin/system/fileUpload",
                   "show-file-list": false,
                   "on-success": handleAvatarSuccess,
                   headers: headers
@@ -303,6 +303,6 @@ return (_ctx, _cache) => {
 }
 
 };
-var brand = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-0dbbf058"]]);
+var brand = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-45f1c27b"]]);
 
 export { brand as default };

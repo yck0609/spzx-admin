@@ -1,8 +1,8 @@
-import { F as FindAllBrand } from './brand.679e6b07.js';
-import { F as FindCategoryByParentId } from './category.5c4155bc.js';
-import { l as service, _ as _export_sfc, c as useApp } from './index.2c51eab4.js';
-import { F as FindBrandByCategoryId } from './categoryBrand.05ef2a9b.js';
-import { F as FindAllProductSpec } from './productSpec.f6bc7791.js';
+import { F as FindAllBrand } from './brand.711c98de.js';
+import { F as FindCategoryByParentId } from './category.0e5d3432.js';
+import { l as service, _ as _export_sfc, c as useApp } from './index.89c44364.js';
+import { F as FindBrandByCategoryId } from './categoryBrand.1b9a0b66.js';
+import { F as FindAllProductSpec } from './productSpec.fbd47ab6.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, F as Fragment, Q as renderList, m as createBlock, R as createTextVNode, S as toDisplayString, L as createCommentVNode, H as ElMessage, a9 as ElMessageBox, $ as pushScopeId, a0 as popScopeId } from './element-plus.fa662df5.js';
 
 const api_name$1 = '/admin/product/product';
@@ -81,7 +81,7 @@ const FindAllProductUnit = () => {
 
 var product_vue_vue_type_style_index_0_scoped_true_lang = '';
 
-const _withScopeId = n => (pushScopeId("data-v-a84a7aec"),n=n(),popScopeId(),n);
+const _withScopeId = n => (pushScopeId("data-v-7323e9a7"),n=n(),popScopeId(),n);
 const _hoisted_1 = { class: "search-div" };
 const _hoisted_2 = /*#__PURE__*/createTextVNode(" 搜索 ");
 const _hoisted_3 = /*#__PURE__*/createTextVNode("重置");
@@ -879,7 +879,7 @@ return (_ctx, _cache) => {
                         createVNode(_component_el_upload, {
                           "file-list": fileList.value,
                           "onUpdate:file-list": _cache[8] || (_cache[8] = $event => ((fileList).value = $event)),
-                          action: "http://localhost:1448/admin/system/fileUpload",
+                          action: "http://121.41.52.4:1448/admin/system/fileUpload",
                           "list-type": "picture-card",
                           multiple: "",
                           "on-success": handleSliderSuccess,
@@ -974,7 +974,7 @@ return (_ctx, _cache) => {
                               default: withCtx((scope) => [
                                 createVNode(_component_el_upload, {
                                   class: "avatar-uploader",
-                                  action: "http://localhost:1448/admin/system/fileUpload",
+                                  action: "http://121.41.52.4:1448/admin/system/fileUpload",
                                   "show-file-list": false,
                                   "on-success": 
                               (response, uploadFile, fileList) => handleSkuSuccess(response, uploadFile, fileList, scope.row)
@@ -1076,7 +1076,7 @@ return (_ctx, _cache) => {
                         createVNode(_component_el_upload, {
                           "file-list": detailsFileList.value,
                           "onUpdate:file-list": _cache[10] || (_cache[10] = $event => ((detailsFileList).value = $event)),
-                          action: "http://localhost:1448/admin/system/fileUpload",
+                          action: "http://121.41.52.4:1448/admin/system/fileUpload",
                           "list-type": "picture-card",
                           multiple: "",
                           "on-success": handleDetailsSuccess,
@@ -1378,6 +1378,6 @@ return (_ctx, _cache) => {
 }
 
 };
-var product = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-a84a7aec"]]);
+var product = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-7323e9a7"]]);
 
 export { product as default };

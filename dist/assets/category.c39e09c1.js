@@ -1,5 +1,5 @@
-import { _ as _export_sfc, c as useApp } from './index.2c51eab4.js';
-import { F as FindCategoryByParentId, E as ExportCategoryData } from './category.5c4155bc.js';
+import { _ as _export_sfc, c as useApp } from './index.89c44364.js';
+import { F as FindCategoryByParentId, E as ExportCategoryData } from './category.0e5d3432.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, R as createTextVNode, S as toDisplayString, F as Fragment, H as ElMessage } from './element-plus.fa662df5.js';
 
 var category_vue_vue_type_style_index_0_scoped_true_lang = '';
@@ -116,7 +116,7 @@ return (_ctx, _cache) => {
               default: withCtx(() => [
                 createVNode(_component_el_upload, {
                   class: "upload-demo",
-                  action: "http://localhost:1448/admin/product/category/import",
+                  action: "http://121.41.52.4:1448/admin/product/category/import",
                   "on-success": onUploadSuccess,
                   headers: headers
                 }, {
@@ -190,6 +190,6 @@ return (_ctx, _cache) => {
 }
 
 };
-var category = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-26fb64ae"]]);
+var category = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-b8256faa"]]);
 
 export { category as default };

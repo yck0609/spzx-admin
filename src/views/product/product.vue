@@ -179,7 +179,7 @@
                     <el-form-item label="轮播图">
                         <el-upload
                             v-model:file-list="fileList"
-                            action="http://localhost:1448/admin/system/fileUpload"
+                            action="http://121.41.52.4:1448/admin/system/fileUpload"
                             list-type="picture-card"
                             multiple
                             :on-success="handleSliderSuccess"
@@ -224,7 +224,7 @@
                         <el-table-column label="图片" #default="scope" width="80">
                           <el-upload
                             class="avatar-uploader"
-                            action="http://localhost:1448/admin/system/fileUpload"
+                            action="http://121.41.52.4:1448/admin/system/fileUpload"
                             :show-file-list="false"
                             :on-success="
                               (response, uploadFile, fileList) => handleSkuSuccess(response, uploadFile, fileList, scope.row)
@@ -266,7 +266,7 @@
                     <el-form-item label="详情图片">
                         <el-upload
                           v-model:file-list="detailsFileList"
-                          action="http://localhost:1448/admin/system/fileUpload"
+                          action="http://121.41.52.4:1448/admin/system/fileUpload"
                           list-type="picture-card"
                           multiple
                           :on-success="handleDetailsSuccess"

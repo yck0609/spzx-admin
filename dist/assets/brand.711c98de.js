@@ -1,4 +1,4 @@
-import { l as service } from './index.2c51eab4.js';
+import { l as service } from './index.89c44364.js';
 
 const api_name = '/admin/product/brand';
 
@@ -13,7 +13,7 @@ const GetBrandPageList = (page, limit) => {
 // 保存品牌
 const SaveBrand = brand => {
     return service({
-        url: `${api_name}/add`,
+        url: `${api_name}/save`,
         method: 'post',
         data: brand,
     })
@@ -40,7 +40,7 @@ const DeleteBrandById = brandId => {
 // 查询所有的品牌数据
 const FindAllBrand = () => {
     return service({
-      url: `${api_name}/queryAll`,
+      url: `${api_name}/findAll`,
       method: 'get',
     })
 };

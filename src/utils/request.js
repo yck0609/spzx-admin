@@ -35,7 +35,7 @@ import router from '@/router'
 import { useApp } from '@/pinia/modules/app'
 
 const service = axios.create({
-  baseURL: 'http://localhost:1448',    // 后端服务的ip地址和端口号
+  baseURL: 'http://121.41.52.4:1448',    // 后端服务的ip地址和端口号
   timeout: 10000,
   withCredentials: true,
 })

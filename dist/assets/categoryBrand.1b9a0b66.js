@@ -1,11 +1,11 @@
-import { l as service } from './index.2c51eab4.js';
+import { l as service } from './index.89c44364.js';
 
 const api_name = '/admin/product/categoryBrand';
 
 // 分页列表
 const GetCategoryBrandPageList = (page, limit, searchObj) => {
     return service({
-        url: `${api_name}/query/${page}/${limit}`,
+        url: `${api_name}/${page}/${limit}`,
         method: 'get',
         params: searchObj,
     })

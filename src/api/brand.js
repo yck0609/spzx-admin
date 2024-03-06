@@ -13,7 +13,7 @@ export const GetBrandPageList = (page, limit) => {
 // 保存品牌
 export const SaveBrand = brand => {
     return request({
-        url: `${api_name}/add`,
+        url: `${api_name}/save`,
         method: 'post',
         data: brand,
     })
@@ -40,7 +40,7 @@ export const DeleteBrandById = brandId => {
 // 查询所有的品牌数据
 export const FindAllBrand = () => {
     return request({
-      url: `${api_name}/queryAll`,
+      url: `${api_name}/findAll`,
       method: 'get',
     })
 }

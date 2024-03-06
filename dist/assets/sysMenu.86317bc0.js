@@ -1,4 +1,4 @@
-import { l as service, _ as _export_sfc } from './index.2c51eab4.js';
+import { l as service, _ as _export_sfc } from './index.89c44364.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, R as createTextVNode, S as toDisplayString, F as Fragment, H as ElMessage, a9 as ElMessageBox } from './element-plus.fa662df5.js';
 
 const api_name = '/admin/system/sysMenu';
@@ -31,7 +31,7 @@ const UpdateSysMenuById = sysMenu => {
 // 根据id删除数据
 const RemoveSysMenuById = id => {
     return service({
-        url: `${api_name}/delete/${id}`,
+        url: `${api_name}/removeById/${id}`,
         method: 'delete',
     })
 };

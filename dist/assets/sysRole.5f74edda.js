@@ -1,7 +1,7 @@
-import { l as service } from './index.2c51eab4.js';
+import { l as service } from './index.89c44364.js';
 
 // 分页查询角色数据
-const GetSysRoleListByPage = (current , limit , queryDto) => {
+const GetSysRoleListByPage = (current, limit, queryDto) => {
     return service({
         // url: '/admin/system/sysRole/findByPage/' + pageNum + "/" + pageSize,
         url: `/admin/system/sysRole/findByPage/${current}/${limit}`,//接口

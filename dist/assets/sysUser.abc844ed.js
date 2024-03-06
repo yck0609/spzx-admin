@@ -1,9 +1,9 @@
-import { l as service, _ as _export_sfc, c as useApp } from './index.2c51eab4.js';
-import { c as GetAllRoleList } from './sysRole.d420860f.js';
+import { l as service, _ as _export_sfc, c as useApp } from './index.89c44364.js';
+import { c as GetAllRoleList } from './sysRole.5f74edda.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, m as createBlock, L as createCommentVNode, R as createTextVNode, S as toDisplayString, F as Fragment, Q as renderList, H as ElMessage, a9 as ElMessageBox } from './element-plus.fa662df5.js';
 
 // 分页查询
-const GetSysUserListByPage = (pageNum , pageSize , queryDto) => {
+const GetSysUserListByPage = (pageNum, pageSize, queryDto) => {
     return service({
         url: "/admin/system/sysUser/findByPage/" + pageNum + "/" + pageSize,
         method: 'post',
@@ -14,7 +14,7 @@ const GetSysUserListByPage = (pageNum , pageSize , queryDto) => {
 // 新增用户的方法
 const SaveSysUser = (sysUser) => {
     return service({
-        url: "/admin/system/sysUser/save",
+        url: "/admin/system/sysUser/saveSysUser",
         method: "post",
         data: sysUser,
     })
@@ -23,7 +23,7 @@ const SaveSysUser = (sysUser) => {
 // 修改用户数据的方法
 const UpdateSysUser = (sysUser) => {
     return service({
-        url: "/admin/system/sysUser/update",
+        url: "/admin/system/sysUser/updateSysUser",
         method: "put",
         data: sysUser,
     })
@@ -32,7 +32,7 @@ const UpdateSysUser = (sysUser) => {
 // 根据id删除用户
 const DeleteSysUserById = (userId) => {
     return service({
-        url: "/admin/system/sysUser/delete/" + userId,
+        url: "/admin/system/sysUser/deleteById/" + userId,
         method: 'delete'
     })
 };
@@ -40,7 +40,7 @@ const DeleteSysUserById = (userId) => {
 // 给用户分配角色请求
 const DoAssignRoleToUser = (assginRoleVo) => {
     return service({
-        url: "/admin/system/sysUser/assignRole",
+        url: "/admin/system/sysUser/doAssign",
         method: 'post',
         data: assginRoleVo
     })
@@ -382,7 +382,7 @@ return (_ctx, _cache) => {
               default: withCtx(() => [
                 createVNode(_component_el_upload, {
                   class: "avatar-uploader",
-                  action: "http://localhost:1448/admin/system/fileUpload",
+                  action: "http://121.41.52.4:1448/admin/system/fileUpload",
                   "show-file-list": false,
                   "on-success": handleAvatarSuccess,
                   headers: headers
@@ -618,6 +618,6 @@ return (_ctx, _cache) => {
 }
 
 };
-var sysUser = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-0395c017"]]);
+var sysUser = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-6c8ae1ba"]]);
 
 export { sysUser as default };
