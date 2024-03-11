@@ -14,7 +14,7 @@ import request from '@/utils/request'
 // 登录接口
 export const Login = data => {
   return request({
-    url: '/admin/system/index/login',
+    url: '/admin/index/login',
     method: 'post',
     data,
   })
@@ -23,7 +23,7 @@ export const Login = data => {
 // 获取登录用户信息
 export const GetUserinfo = () => {
   return request({
-    url: '/admin/system/index/getUserInfo',
+    url: '/admin/index/userInfo',
     method: 'get',
   })
 }
@@ -31,7 +31,7 @@ export const GetUserinfo = () => {
 // 获取验证码
 export const GetValidateCode = () => {
   return request({
-    url: "/admin/system/index/generateValidateCode",
+    url: "/admin/index/generateCaptha",
     method: 'get'
   })
 }
@@ -39,7 +39,7 @@ export const GetValidateCode = () => {
 // 退出功能
 export const Logout = () => {
   return request({
-      url: '/admin/system/index/logout',
+      url: '/admin/index/logout',
       method: 'get',
   })
 }

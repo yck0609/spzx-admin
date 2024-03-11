@@ -1,11 +1,11 @@
-import { l as service } from './index.89c44364.js';
+import { l as service } from './index.3d070750.js';
 
-const api_name = '/admin/product/productSpec';
+const api_name = '/admin/product/specification';
 
 // 分页列表
-const GetProductSpecPageList = (page, limit) => {
+const GetProductSpecPageList = (page, size) => {
     return service({
-      url: `${api_name}/${page}/${limit}`,
+      url: `${api_name}/select/${page}/${size}`,
       method: 'get'
     })
 };
@@ -13,7 +13,7 @@ const GetProductSpecPageList = (page, limit) => {
 // 保存信息
 const SaveProductSpec = productSpec => {
     return service({
-      url: `${api_name}/save`,
+      url: `${api_name}/insert`,
       method: 'post',
       data: productSpec,
     })
@@ -22,16 +22,16 @@ const SaveProductSpec = productSpec => {
 // 修改信息
 const UpdateProductSpecById = productSpec => {
     return service({
-        url: `${api_name}/updateById`,
+        url: `${api_name}/update`,
         method: 'put',
         data: productSpec,
     })
 };
 
 // 根据id删除数据
-const DeleteProductSpecById = id => {
+const DeleteProductSpecById = productSpecificationId => {
     return service({
-      url: `${api_name}/deleteById/${id}`,
+      url: `${api_name}/delete/${productSpecificationId}`,
       method: 'delete',
     })
 };
@@ -39,7 +39,7 @@ const DeleteProductSpecById = id => {
 // 查询所有的产品规格数据
 const FindAllProductSpec = () => {
     return service({
-      url: `${api_name}/findAll`,
+      url: `${api_name}/select/all`,
       method: 'get',
     })
   };

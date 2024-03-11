@@ -1,11 +1,11 @@
 import request from '@/utils/request'
 
-const api_name = '/admin/product/productSpec'
+const api_name = '/admin/product/specification'
 
 // 分页列表
-export const GetProductSpecPageList = (page, limit) => {
+export const GetProductSpecPageList = (page, size) => {
     return request({
-      url: `${api_name}/${page}/${limit}`,
+      url: `${api_name}/select/${page}/${size}`,
       method: 'get'
     })
 }
@@ -13,7 +13,7 @@ export const GetProductSpecPageList = (page, limit) => {
 // 保存信息
 export const SaveProductSpec = productSpec => {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}/insert`,
       method: 'post',
       data: productSpec,
     })
@@ -22,16 +22,16 @@ export const SaveProductSpec = productSpec => {
 // 修改信息
 export const UpdateProductSpecById = productSpec => {
     return request({
-        url: `${api_name}/updateById`,
+        url: `${api_name}/update`,
         method: 'put',
         data: productSpec,
     })
 }
 
 // 根据id删除数据
-export const DeleteProductSpecById = id => {
+export const DeleteProductSpecById = productSpecificationId => {
     return request({
-      url: `${api_name}/deleteById/${id}`,
+      url: `${api_name}/delete/${productSpecificationId}`,
       method: 'delete',
     })
 }
@@ -39,7 +39,7 @@ export const DeleteProductSpecById = id => {
 // 查询所有的产品规格数据
 export const FindAllProductSpec = () => {
     return request({
-      url: `${api_name}/findAll`,
+      url: `${api_name}/select/all`,
       method: 'get',
     })
   }

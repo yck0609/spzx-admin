@@ -1,9 +1,9 @@
 import request from '@/utils/request'
 
 // 分页查询
-export const GetSysUserListByPage = (pageNum, pageSize, queryDto) => {
+export const GetSysUserListByPage = (page, size, queryDto) => {
     return request({
-        url: "/admin/system/sysUser/findByPage/" + pageNum + "/" + pageSize,
+        url: "/admin/administrator/select/" + page + "/" + size,
         method: 'post',
         data: queryDto
     })
@@ -12,7 +12,7 @@ export const GetSysUserListByPage = (pageNum, pageSize, queryDto) => {
 // 新增用户的方法
 export const SaveSysUser = (sysUser) => {
     return request({
-        url: "/admin/system/sysUser/saveSysUser",
+        url: "/admin/administrator/insert",
         method: "post",
         data: sysUser,
     })
@@ -21,16 +21,16 @@ export const SaveSysUser = (sysUser) => {
 // 修改用户数据的方法
 export const UpdateSysUser = (sysUser) => {
     return request({
-        url: "/admin/system/sysUser/updateSysUser",
+        url: "/admin/administrator/update",
         method: "put",
         data: sysUser,
     })
 }
 
 // 根据id删除用户
-export const DeleteSysUserById = (userId) => {
+export const DeleteSysUserById = (administratorId) => {
     return request({
-        url: "/admin/system/sysUser/deleteById/" + userId,
+        url: "/admin/administrator/delete/" + administratorId,
         method: 'delete'
     })
 }
@@ -38,7 +38,7 @@ export const DeleteSysUserById = (userId) => {
 // 给用户分配角色请求
 export const DoAssignRoleToUser = (assginRoleVo) => {
     return request({
-        url: "/admin/system/sysUser/doAssign",
+        url: "/admin/administrator/role/assign",
         method: 'post',
         data: assginRoleVo
     })

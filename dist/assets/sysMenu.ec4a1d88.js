@@ -1,11 +1,11 @@
-import { l as service, _ as _export_sfc } from './index.89c44364.js';
+import { l as service, _ as _export_sfc } from './index.3d070750.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, R as createTextVNode, S as toDisplayString, F as Fragment, H as ElMessage, a9 as ElMessageBox } from './element-plus.fa662df5.js';
 
-const api_name = '/admin/system/sysMenu';
+const api_name = '/admin/menu';
 // 分页列表
 const FindNodes = () => {
     return service({
-        url: `${api_name}/findAllNodes`,
+        url: `${api_name}/select/all`,
         method: 'get',
     })
 };
@@ -13,7 +13,7 @@ const FindNodes = () => {
 // 保存信息
 const SaveMenu = sysMenu => {
     return service({
-        url: `${api_name}/save`,
+        url: `${api_name}/insert`,
         method: 'post',
         data: sysMenu,
     })
@@ -29,9 +29,9 @@ const UpdateSysMenuById = sysMenu => {
 };
 
 // 根据id删除数据
-const RemoveSysMenuById = id => {
+const RemoveSysMenuById = menuId => {
     return service({
-        url: `${api_name}/removeById/${id}`,
+        url: `${api_name}/delete/${menuId}`,
         method: 'delete',
     })
 };

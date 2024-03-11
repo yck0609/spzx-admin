@@ -1,11 +1,11 @@
-import { l as service } from './index.89c44364.js';
+import { l as service } from './index.3d070750.js';
 
 const api_name = '/admin/product/brand';
 
 // 分页列表
-const GetBrandPageList = (page, limit) => {
+const GetBrandPageList = (page, size) => {
   return service({
-    url: `${api_name}/query/${page}/${limit}`,
+    url: `${api_name}/select/${page}/${size}`,
     method: 'get'
   })
 };
@@ -13,7 +13,7 @@ const GetBrandPageList = (page, limit) => {
 // 保存品牌
 const SaveBrand = brand => {
     return service({
-        url: `${api_name}/save`,
+        url: `${api_name}/insert`,
         method: 'post',
         data: brand,
     })
@@ -40,7 +40,7 @@ const DeleteBrandById = brandId => {
 // 查询所有的品牌数据
 const FindAllBrand = () => {
     return service({
-      url: `${api_name}/findAll`,
+      url: `${api_name}/select/all`,
       method: 'get',
     })
 };

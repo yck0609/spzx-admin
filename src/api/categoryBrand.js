@@ -1,11 +1,11 @@
 import request from '@/utils/request'
 
-const api_name = '/admin/product/categoryBrand'
+const api_name = '/admin/category/brand'
 
 // 分页列表
-export const GetCategoryBrandPageList = (page, limit, searchObj) => {
+export const GetCategoryBrandPageList = (page, size, searchObj) => {
     return request({
-        url: `${api_name}/${page}/${limit}`,
+        url: `${api_name}/select/${page}/${size}`,
         method: 'get',
         params: searchObj,
     })
@@ -14,7 +14,7 @@ export const GetCategoryBrandPageList = (page, limit, searchObj) => {
 // 保存信息
 export const SaveCategoryBrand = categoryBrand => {
     return request({
-      url: `${api_name}/save`,
+      url: `${api_name}/insert`,
       method: 'post',
       data: categoryBrand,
     })

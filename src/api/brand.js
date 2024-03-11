@@ -3,9 +3,9 @@ import request from '@/utils/request'
 const api_name = '/admin/product/brand'
 
 // 分页列表
-export const GetBrandPageList = (page, limit) => {
+export const GetBrandPageList = (page, size) => {
   return request({
-    url: `${api_name}/query/${page}/${limit}`,
+    url: `${api_name}/select/${page}/${size}`,
     method: 'get'
   })
 }
@@ -13,7 +13,7 @@ export const GetBrandPageList = (page, limit) => {
 // 保存品牌
 export const SaveBrand = brand => {
     return request({
-        url: `${api_name}/save`,
+        url: `${api_name}/insert`,
         method: 'post',
         data: brand,
     })
@@ -40,7 +40,7 @@ export const DeleteBrandById = brandId => {
 // 查询所有的品牌数据
 export const FindAllBrand = () => {
     return request({
-      url: `${api_name}/findAll`,
+      url: `${api_name}/select/all`,
       method: 'get',
     })
 }

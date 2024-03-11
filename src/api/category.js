@@ -1,11 +1,11 @@
 import request from '@/utils/request'
 
-const api_name = '/admin/product/category'
+const api_name = '/admin/category'
 
 // 根据parentId获取下级节点
-export const FindCategoryByParentId = id => {
+export const FindCategoryByParentId = parentId => {
   return request({
-    url: `${api_name}/findCategoryList/${id}`,
+    url: `${api_name}/select/${parentId}`,
     method: 'get',
   })
 }
@@ -13,7 +13,7 @@ export const FindCategoryByParentId = id => {
 // 导出方法
 export const ExportCategoryData = () => {
     return request({
-      url: `${api_name}/exportData`,
+      url: `${api_name}/export`,
       method: 'get',
       responseType: 'blob'  // // 这里指定响应类型为blob类型,二进制数据类型，用于表示大量的二进制数据
     })

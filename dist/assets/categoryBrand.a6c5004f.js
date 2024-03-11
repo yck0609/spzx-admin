@@ -1,11 +1,11 @@
-import { l as service } from './index.89c44364.js';
+import { l as service } from './index.3d070750.js';
 
-const api_name = '/admin/product/categoryBrand';
+const api_name = '/admin/category/brand';
 
 // 分页列表
-const GetCategoryBrandPageList = (page, limit, searchObj) => {
+const GetCategoryBrandPageList = (page, size, searchObj) => {
     return service({
-        url: `${api_name}/${page}/${limit}`,
+        url: `${api_name}/select/${page}/${size}`,
         method: 'get',
         params: searchObj,
     })
@@ -14,7 +14,7 @@ const GetCategoryBrandPageList = (page, limit, searchObj) => {
 // 保存信息
 const SaveCategoryBrand = categoryBrand => {
     return service({
-      url: `${api_name}/save`,
+      url: `${api_name}/insert`,
       method: 'post',
       data: categoryBrand,
     })

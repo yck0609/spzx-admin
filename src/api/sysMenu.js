@@ -1,10 +1,10 @@
 import request from '@/utils/request'
 
-const api_name = '/admin/system/sysMenu'
+const api_name = '/admin/menu'
 // 分页列表
 export const FindNodes = () => {
     return request({
-        url: `${api_name}/findAllNodes`,
+        url: `${api_name}/select/all`,
         method: 'get',
     })
 }
@@ -12,7 +12,7 @@ export const FindNodes = () => {
 // 保存信息
 export const SaveMenu = sysMenu => {
     return request({
-        url: `${api_name}/save`,
+        url: `${api_name}/insert`,
         method: 'post',
         data: sysMenu,
     })
@@ -28,9 +28,9 @@ export const UpdateSysMenuById = sysMenu => {
 }
 
 // 根据id删除数据
-export const RemoveSysMenuById = id => {
+export const RemoveSysMenuById = menuId => {
     return request({
-        url: `${api_name}/removeById/${id}`,
+        url: `${api_name}/delete/${menuId}`,
         method: 'delete',
     })
 }

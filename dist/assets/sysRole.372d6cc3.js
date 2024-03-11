@@ -1,10 +1,10 @@
-import { l as service } from './index.89c44364.js';
+import { l as service } from './index.3d070750.js';
 
 // 分页查询角色数据
-const GetSysRoleListByPage = (current, limit, queryDto) => {
+const GetSysRoleListByPage = (page, size, queryDto) => {
     return service({
-        // url: '/admin/system/sysRole/findByPage/' + pageNum + "/" + pageSize,
-        url: `/admin/system/sysRole/findByPage/${current}/${limit}`,//接口
+        // url: '/admin/role/findByPage/' + pageNum + "/" + pageSize,
+        url: `/admin/role/select/${page}/${size}`,//接口
         method: 'post',//提交方式
         //后端接口如果是@RequestBody，需要用data：名称
         //如果没有注解,前端是params：名称
@@ -15,7 +15,7 @@ const GetSysRoleListByPage = (current, limit, queryDto) => {
 // 添加角色请求方法
 const SaveSysRole = (sysRole) => {
     return service({
-        url: '/admin/system/sysRole/saveSysRole',
+        url: '/admin/role/insert',
         method: 'post',
         data: sysRole ,
     })
@@ -24,7 +24,7 @@ const SaveSysRole = (sysRole) => {
 // 保存修改
 const UpdateSysRole = (data) => {
     return service({
-        url: '/admin/system/sysRole/updateSysRole',
+        url: '/admin/role/update',
         method: 'put',
         data
     })
@@ -33,15 +33,15 @@ const UpdateSysRole = (data) => {
 // 删除角色
 const DeleteSysRoleById = (roleId) => {
     return service({
-        url: '/admin/system/sysRole/deleteById/' + roleId,
+        url: '/admin/role/delete/' + roleId,
         method: 'delete'
     })
 };
 
 // 查询所有的角色数据
-const GetAllRoleList = (userId) => {
+const GetAllRoleList = (administratorId) => {
     return service({
-        url: '/admin/system/sysRole/findAllRoles/' + userId,
+        url: '/admin/role/select/' + administratorId,
         method: 'get'
     })
 };
@@ -49,7 +49,7 @@ const GetAllRoleList = (userId) => {
 // 查询指定角色所对应的菜单id
 const GetSysRoleMenuIds = (roleId) => {
     return service({
-        url: "/admin/system/sysMenu/findAllNodes/"+ roleId,
+        url: "/admin/sysMenu/select/"+ roleId,
         method: 'get'
     })
 };
@@ -57,7 +57,7 @@ const GetSysRoleMenuIds = (roleId) => {
 // 根据角色分配菜单请求方法
 const DoAssignMenuIdToSysRole = (assignMenuDto) => {
     return service({
-        url: "/admin/system/sysRole/assignMenu",
+        url: "/admin/role/menu/assign",
         method: 'post',
         data: assignMenuDto
     })
