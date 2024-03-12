@@ -1,5 +1,5 @@
-import { G as GetProductSpecPageList, U as UpdateProductSpecById, S as SaveProductSpec, D as DeleteProductSpecById } from './productSpec.a2e52452.js';
-import { _ as _export_sfc } from './index.462def5c.js';
+import { G as GetProductSpecPageList, U as UpdateProductSpecById, S as SaveProductSpec, D as DeleteProductSpecById } from './productSpec.2fa291e8.js';
+import { _ as _export_sfc } from './index.0b7b9f6d.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, F as Fragment, Q as renderList, R as createTextVNode, S as toDisplayString, m as createBlock, H as ElMessage, a9 as ElMessageBox } from './element-plus.fa662df5.js';
 
 var productSpec_vue_vue_type_style_index_0_scoped_true_lang = '';

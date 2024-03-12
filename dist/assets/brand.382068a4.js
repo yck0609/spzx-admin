@@ -1,6 +1,6 @@
-import { l as service } from './index.462def5c.js';
+import { l as service } from './index.0b7b9f6d.js';
 
-const api_name = '/admin/product/brand';
+const api_name = '/admin/brand';
 
 // 分页列表
 const GetBrandPageList = (page, size) => {

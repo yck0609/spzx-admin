@@ -1,7 +1,7 @@
-import { F as FindAllBrand } from './brand.e2959236.js';
-import { F as FindCategoryByParentId } from './category.a4113c4e.js';
-import { G as GetCategoryBrandPageList, D as DeleteCategoryBrandById, U as UpdateCategoryBrandById, S as SaveCategoryBrand } from './categoryBrand.e428db61.js';
-import { _ as _export_sfc } from './index.462def5c.js';
+import { F as FindAllBrand } from './brand.382068a4.js';
+import { F as FindCategoryByParentId } from './category.e17205ee.js';
+import { G as GetCategoryBrandPageList, D as DeleteCategoryBrandById, U as UpdateCategoryBrandById, S as SaveCategoryBrand } from './categoryBrand.a88c6308.js';
+import { _ as _export_sfc } from './index.0b7b9f6d.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, F as Fragment, Q as renderList, m as createBlock, R as createTextVNode, a9 as ElMessageBox, H as ElMessage } from './element-plus.fa662df5.js';
 
 var categoryBrand_vue_vue_type_style_index_0_scoped_true_lang = '';

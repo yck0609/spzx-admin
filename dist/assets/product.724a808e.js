@@ -1,8 +1,8 @@
-import { F as FindAllBrand } from './brand.e2959236.js';
-import { F as FindCategoryByParentId } from './category.a4113c4e.js';
-import { l as service, _ as _export_sfc, c as useApp } from './index.462def5c.js';
-import { F as FindBrandByCategoryId } from './categoryBrand.e428db61.js';
-import { F as FindAllProductSpec } from './productSpec.a2e52452.js';
+import { F as FindAllBrand } from './brand.382068a4.js';
+import { F as FindCategoryByParentId } from './category.e17205ee.js';
+import { l as service, _ as _export_sfc, c as useApp } from './index.0b7b9f6d.js';
+import { F as FindBrandByCategoryId } from './categoryBrand.a88c6308.js';
+import { F as FindAllProductSpec } from './productSpec.2fa291e8.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, F as Fragment, Q as renderList, m as createBlock, R as createTextVNode, S as toDisplayString, L as createCommentVNode, H as ElMessage, a9 as ElMessageBox, $ as pushScopeId, a0 as popScopeId } from './element-plus.fa662df5.js';
 
 const api_name$1 = '/admin/product';

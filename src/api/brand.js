@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-const api_name = '/admin/product/brand'
+const api_name = '/admin/brand'
 
 // 分页列表
 export const GetBrandPageList = (page, size) => {
