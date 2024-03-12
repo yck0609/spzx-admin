@@ -404,7 +404,7 @@
 import { ref , onMounted } from 'vue'
 import { FindAllBrand } from '@/api/brand.js'
 import { FindCategoryByParentId } from '@/api/category.js'
-import { GetProductPageList, SaveProduct , UpdateProductById , GetProductById , DeleteProductById , UpdateProductStatus , UpdateProductAuditStatus } from '@/api/product.js'
+import { GetProductPageList, SaveProduct, UpdateProductById, GetProductById, DeleteProductById, UpdateProductStatus, UpdateProductAuditStatus } from '@/api/product.js'
 import { FindBrandByCategoryId } from '@/api/categoryBrand.js'
 import { FindAllProductUnit } from '@/api/productUnit.js'
 import { FindAllProductSpec } from '@/api/productSpec.js'

@@ -1,8 +1,8 @@
-import { F as FindAllBrand } from './brand.382068a4.js';
-import { F as FindCategoryByParentId } from './category.e17205ee.js';
-import { l as service, _ as _export_sfc, c as useApp } from './index.0b7b9f6d.js';
-import { F as FindBrandByCategoryId } from './categoryBrand.a88c6308.js';
-import { F as FindAllProductSpec } from './productSpec.2fa291e8.js';
+import { F as FindAllBrand } from './brand.c256908f.js';
+import { F as FindCategoryByParentId } from './category.f1bc6715.js';
+import { l as service, _ as _export_sfc, c as useApp } from './index.49516a4f.js';
+import { F as FindBrandByCategoryId } from './categoryBrand.9778df78.js';
+import { F as FindAllProductSpec } from './productSpec.da196bc7.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, F as Fragment, Q as renderList, m as createBlock, R as createTextVNode, S as toDisplayString, L as createCommentVNode, H as ElMessage, a9 as ElMessageBox, $ as pushScopeId, a0 as popScopeId } from './element-plus.fa662df5.js';
 
 const api_name$1 = '/admin/product';
@@ -11,8 +11,8 @@ const api_name$1 = '/admin/product';
 const GetProductPageList = (page, size, queryDto) => {
   return service({
     url: `${api_name$1}/select/${page}/${size}`,
-    method: 'get',
-    params: queryDto,
+    method: 'post',
+    data: queryDto,
   })
 };
 
@@ -81,7 +81,7 @@ const FindAllProductUnit = () => {
 
 var product_vue_vue_type_style_index_0_scoped_true_lang = '';
 
-const _withScopeId = n => (pushScopeId("data-v-b63c70b2"),n=n(),popScopeId(),n);
+const _withScopeId = n => (pushScopeId("data-v-663455f6"),n=n(),popScopeId(),n);
 const _hoisted_1 = { class: "search-div" };
 const _hoisted_2 = /*#__PURE__*/createTextVNode(" 搜索 ");
 const _hoisted_3 = /*#__PURE__*/createTextVNode("重置");
@@ -1378,6 +1378,6 @@ return (_ctx, _cache) => {
 }
 
 };
-var product = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-b63c70b2"]]);
+var product = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-663455f6"]]);
 
 export { product as default };

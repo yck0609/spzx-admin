@@ -1,4 +1,4 @@
-import { l as service } from './index.0b7b9f6d.js';
+import { l as service } from './index.49516a4f.js';
 
 // 分页查询角色数据
 const GetSysRoleListByPage = (page, size, queryDto) => {

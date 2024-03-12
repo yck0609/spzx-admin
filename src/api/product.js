@@ -6,8 +6,8 @@ const api_name = '/admin/product'
 export const GetProductPageList = (page, size, queryDto) => {
   return request({
     url: `${api_name}/select/${page}/${size}`,
-    method: 'get',
-    params: queryDto,
+    method: 'post',
+    data: queryDto,
   })
 }
 

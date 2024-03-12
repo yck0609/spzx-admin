@@ -1,4 +1,4 @@
-import { l as service } from './index.0b7b9f6d.js';
+import { l as service } from './index.49516a4f.js';
 
 const api_name = '/admin/product/specification';
 
@@ -6,7 +6,7 @@ const api_name = '/admin/product/specification';
 const GetProductSpecPageList = (page, size) => {
     return service({
       url: `${api_name}/select/${page}/${size}`,
-      method: 'get'
+      method: 'get',
     })
 };
 

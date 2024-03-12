@@ -6,7 +6,7 @@ const api_name = '/admin/product/specification'
 export const GetProductSpecPageList = (page, size) => {
     return request({
       url: `${api_name}/select/${page}/${size}`,
-      method: 'get'
+      method: 'get',
     })
 }
 
