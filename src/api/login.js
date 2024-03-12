@@ -31,8 +31,8 @@ export const GetUserinfo = () => {
 // 获取验证码
 export const GetValidateCode = () => {
   return request({
-    url: "/admin/index/generateCaptha",
-    method: 'get'
+    url: '/admin/index/captcha',
+    method: 'get',
   })
 }
 

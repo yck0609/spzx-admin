@@ -1,4 +1,4 @@
-import { l as service } from './index.3d070750.js';
+import { l as service } from './index.462def5c.js';
 
 const api_name = '/admin/category/brand';
 

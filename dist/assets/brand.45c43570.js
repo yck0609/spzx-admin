@@ -1,5 +1,5 @@
-import { _ as _export_sfc, c as useApp } from './index.3d070750.js';
-import { G as GetBrandPageList, D as DeleteBrandById, U as UpdateBrandById, S as SaveBrand } from './brand.6609f292.js';
+import { _ as _export_sfc, c as useApp } from './index.462def5c.js';
+import { G as GetBrandPageList, D as DeleteBrandById, U as UpdateBrandById, S as SaveBrand } from './brand.e2959236.js';
 import { r as ref, o as onMounted, p as resolveComponent, l as openBlock, J as createElementBlock, K as createBaseVNode, j as createVNode, n as withCtx, m as createBlock, F as Fragment, R as createTextVNode, a9 as ElMessageBox, H as ElMessage } from './element-plus.fa662df5.js';
 
 var brand_vue_vue_type_style_index_0_scoped_true_lang = '';
